@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>HTML Exercise</title>
+	<title>Regiwter</title>
 </head>
 <body>
+
 <h1>Register</h1>
+
 <form>
 	<label for="firstname">First Name:</label>
-	<input id="first name" type="text" placeholder="firstname" required>
+	<input name="firstname" id="firstname" type="text" placeholder="firstname" required>
 	<label for="lastname">Last Name</label>
-	<input id="last name" type="text" placeholder="lastname" required>
+	<input name="lastname" id="lastname" type="text" placeholder="lastname" required>
 <p>
-	<label>Male</label>
-	<input name="gender" id="Male" type="radio">
-	<label>Female</label>
-	<input name="gender" id="Female" type="radio">
-	<label>Other</label>
-	<input name="gender" id="other" type="radio">
+	<label for="male">Male</label>
+	<input id="male" name="gender" value"Male" type="radio">
+	<label for="female">Female</label>
+	<input id="female" name="gender" value="Female" type="radio">
+	<label for="other">Other</label>
+	<input id="other" name="gender" value="other" type="radio">
 </p>
 <p>
 	<label for="email">Email</label>
@@ -34,7 +36,7 @@
 		<option value="Apr">Apr</option>
 		<option value="May">May</option>
 	</select>
-	<select name="date">
+	<select name="day">
 		<option value="1">1</option>
 		<option value="2">2</option>
 		<option value="3">3</option>
@@ -47,8 +49,8 @@
 	</select>
 </p>
 <p>
-	I agree to the terms and conditon 
-	<input type="checkbox">
+	<label for="agreed">I agree to the terms and conditon </label>
+	<input id="agreed" name ="agreed" type="checkbox">
 </p>
 <p>
 	<input type="submit">
