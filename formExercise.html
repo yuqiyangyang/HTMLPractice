@@ -1,63 +1,79 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Regiwter</title>
+	<title>Forms Execise</title>
 </head>
 <body>
+ <h1>Register</h1>
 
-<h1>Register</h1>
+ <form>
+<label for="firstName">First Name: </label>
+<input name ="firstName" id ="firstName" type="text" placeholder="John" required>
+<label for ="lastName">Last Name: </label>
+<input name ="lastName" id = "lastName" type="text" placeholder="Smith" required>
 
-<form>
-	<label for="firstname">First Name:</label>
-	<input name="firstname" id="firstname" type="text" placeholder="firstname" required>
-	<label for="lastname">Last Name</label>
-	<input name="lastname" id="lastname" type="text" placeholder="lastname" required>
+
 <p>
 	<label for="male">Male</label>
-	<input id="male" name="gender" value"Male" type="radio">
+	<input id="male" name="genderChoice" type="radio" value="MALE">
 	<label for="female">Female</label>
-	<input id="female" name="gender" value="Female" type="radio">
-	<label for="other">Other</label>
-	<input id="other" name="gender" value="other" type="radio">
-</p>
-<p>
-	<label for="email">Email</label>
-	<input id="email" type="email" placehold="email" requried>
-	<label for="password">Password</label>
-	<input id="password" type="password" minlength="6" maxlength="10" required>
+	<input id ="female" name="genderChoice" type="radio" value="FEMALE">
+	<label for="others">Others</label>
+	<input id="others" name="genderChoice" type="radio" value="OTHER">
 </p>
 
 <p>
-	<label>Birthday: </label> 
-	<select name="month">
-		<option value="Jan">Jan</option>
-		<option value="Feb">Feb</option>
-		<option value="Mar">Mar</option>
-		<option value="Apr">Apr</option>
-		<option value="May">May</option>
-	</select>
-	<select name="day">
-		<option value="1">1</option>
-		<option value="2">2</option>
-		<option value="3">3</option>
-		<option value="4">4</option>
-	</select>
-	<select name="Year">
-		<option value ="2019">2019</option>
-		<option value="2018">2018</option>
-		<option value="2017">2017</option>
-	</select>
-</p>
+	<label for="email">Email: </label>
+	<input name="email" id="email" type="email" placeholder="your email" required>
+	<label for="password">Password: </label>
+	<input name = "password" id="password" type="password" placeholder="your password"  minlength = "5" required>
+ </p>
+
 <p>
-	<label for="agreed">I agree to the terms and conditon </label>
-	<input id="agreed" name ="agreed" type="checkbox">
+	<label for="birthday" required>Birthday: 
+	<select name="month">
+		<option value="month"> Month </option>
+		<option value="Jan"> Jan</option>
+		<option value="feb"> Feb</option>
+		<option value="mar"> Mar</option>
+		<option value="apr"> April</option>
+	</select>
+
+<select name="day" required>
+		<option value="day"> Day </option>
+		<option value="01"> 01</option>
+		<option value="02"> 02</option>
+		<option value="03"> 03</option>
+		<option value="04"> 04</option>
+	</select>
+
+	<select name="year" required>
+		<option value="month"> Year </option>
+		<option value="1990"> 1990 </option>
+		<option value="1991"> 1991 </option>
+		<option value="1992"> 1992</option>
+		<option value="1993"> 1993</option>
+	</select>
+</label>
 </p>
+
+<p>
+	<label for="agreement">I agree to the terms and condition</label>
+	<input id = "agreement" name="agreement" type="checkbox" required>
+</p>
+
+
 <p>
 	<input type="submit">
 </p>
 
 
 
-</form>
+
+ </form>
+
+
+
+
 </body>
 </html>
